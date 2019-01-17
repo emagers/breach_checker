@@ -5,14 +5,17 @@ This tool makes calls to APIs provided by [Troy Hunt @ haveibeenpwned.com](https
 
 # Inputs
 You will need to provide a path to a file which contains a newline separated list of emails, ex:
-`emails.txt`
+
+```emails.txt```
 test1@test.com
 test2@test.com
 ...
 
 # Outputs
 This program will output two JSON files:
+
 `pbreach.json` -- A JSON list of all the emails involved in breaches that exposed passwords, along with all breaches the email is associated with.
+
 `breach.json` -- A JSON list of all the emails not involved in breaches that exposed passwords, along with all the breaches the email is associated with.
 
 # Running the application
