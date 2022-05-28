@@ -1,7 +1,11 @@
-# LoginChecker 
+# BreachChecker 
 A tool to see if email addresses have been involved in any reported breaches. 
 
 This tool makes calls to APIs provided by [Troy Hunt @ haveibeenpwned.com](https://haveibeenpwned.com) to check if a list of emails (provided by you) has been compromised. This is just an ease of use tool so that you don't have to manually copy and paste all of your emails into the pwned website.
+
+# Notice
+
+Since development of this tool, the API was locked down to requiring a paid API key. I have updated the code to accept a key as a second arg `BreachChecker emails.txt {api key}`, however I will not be providing further updates or maintaining this project. Troy's website is still available to check your accounts and is regularly updated with data breaches.
 
 # Inputs
 You will need to provide a path to a file which contains a newline separated list of emails, ex:
@@ -10,6 +14,8 @@ You will need to provide a path to a file which contains a newline separated lis
 test1@test.com
 test2@test.com
 ...
+
+You will also need to provide an API key which can be purchased from https://haveibeenpwned.com.
 
 # Outputs
 This program will output two JSON files:
@@ -20,10 +26,10 @@ This program will output two JSON files:
 
 # Running the application
 Navigate to the path the executable for your OS (if it's one of the three I provided builds for) and run the following command via command line:
-`./LoginChecker.exe {path_to_email_list}`
+`./BreachChecker.exe {path_to_email_list}`
 
 # Building 
-If you want to make changes and rebuild the application, or build to target a different runtime then please see [dotnet documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build?tabs=netcore2x) on how to do so.
+If you want to make changes and rebuild the application, or build to target a different runtime then please see [dotnet documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build?tabs=net6x) on how to do so.
 
 # License
 

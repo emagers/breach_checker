@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LoginChecker
+namespace BreachChecker
 {
     public class Account
     {
